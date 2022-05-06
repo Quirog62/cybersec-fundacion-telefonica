@@ -15,10 +15,10 @@ def bannerGrab(net_address,min_host,max_host,ports):
     for host in range(min_host,max_host):
         for port in ports:
             try:
+                socket.setdefaulttimeout(2)
                 ip_adress =  net_address + "." + str(host)
                 s.connect((ip_adress,int(port)))
-                s.settimeout(1)
-                banner = s.recv(1024).decode("utf-8")
+                banner = s.recv(25).decode("utf-8")
                 print("Banner encontrado en IP = " + ip_adress + ", puerto = " + str(port))
                 print("Banner = " + banner)
             except:
