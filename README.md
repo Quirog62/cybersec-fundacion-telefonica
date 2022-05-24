@@ -1,7 +1,7 @@
 # cybersec-fundacion-telefonica
 Scripts hechos para el curso de ciberseguridad
 
-Para el script de esteganografía se necesita tener instalado los siguientes módulos: 
+Para el script de esteganografía se necesita tener instalado los siguientes módulos:  
 -Pillow  
 -IO  
 -Binascii  
